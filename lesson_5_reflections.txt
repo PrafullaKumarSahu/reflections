@@ -1,0 +1,304 @@
+Server Warrior (master *) reflections $ git init
+Reinitialized existing Git repository in E:/testGit/reflections/.git/
+Server Warrior (master *) reflections $ git remote
+origin
+Server Warrior (master *) reflections $ git remote remove origin
+Server Warrior (master *) reflections $ git remote
+Server Warrior (master *) reflections $ git remote add origin git@github.com:Pra                                                                                                                fullaKumarSahu/reflections.git
+Server Warrior (master *) reflections $ git remote
+origin
+Server Warrior (master *) reflections $ git remote -v
+origin  git@github.com:PrafullaKumarSahu/reflections.git (fetch)
+origin  git@github.com:PrafullaKumarSahu/reflections.git (push)
+Server Warrior (master *) reflections $ git push
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Server Warrior (master *) reflections $ git push origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Server Warrior (master *) reflections $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   lesson_1_reflections.txt
+        modified:   lesson_2_reflections.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Server Warrior (master *) reflections $ git add lesson1_reflections.txt
+fatal: pathspec 'lesson1_reflections.txt' did not match any files
+Server Warrior (master *) reflections $ git add lesson_1_reflections.txt
+Server Warrior (master *+) reflections $ git add lesson_2_reflections.txt
+Server Warrior (master +) reflections $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   lesson_1_reflections.txt
+        modified:   lesson_2_reflections.txt
+
+Server Warrior (master +) reflections $ git commit -m "update lesson1"
+[master 014c576] update lesson1
+ 2 files changed, 48 insertions(+), 709 deletions(-)
+ rewrite lesson_1_reflections.txt (99%)
+Server Warrior (master) reflections $ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+nothing to commit, working directory clean
+Server Warrior (master) reflections $ git log
+commit 014c576643a7c93f5423c366ef0b8b61dace622f
+Author: prafullakumarsahu <prafullakumarsahu@gmail.com>
+Date:   Thu Apr 7 18:37:36 2016 +0530
+
+    update lesson1
+
+commit c805fa9d27c0ebf67ba603ddd8c4cabfe377a6bb
+Author: prafullakumarsahu <prafullakumarsahu@gmail.com>
+Date:   Thu Apr 7 17:35:41 2016 +0530
+
+    just a space to test
+
+commit 9f315970666cb392829cdbb1271d7a486f5af9c1
+Author: prafullakumarsahu <prafullakumarsahu@gmail.com>
+Date:   Thu Apr 7 16:54:16 2016 +0530
+
+    commit3
+
+commit 4baf4afcb37784eba2a7bb1969cee3cac79336ae
+Author: prafullakumarsahu <prafullakumarsahu@gmail.com>
+Date:   Thu Apr 7 16:31:48 2016 +0530
+
+    commit3
+Server Warrior (master) reflections $ git log
+commit 014c576643a7c93f5423c366ef0b8b61dace622f
+Author: prafullakumarsahu <prafullakumarsahu@gmail.com>
+Date:   Thu Apr 7 18:37:36 2016 +0530
+
+    update lesson1
+
+commit c805fa9d27c0ebf67ba603ddd8c4cabfe377a6bb
+Author: prafullakumarsahu <prafullakumarsahu@gmail.com>
+Date:   Thu Apr 7 17:35:41 2016 +0530
+
+    just a space to test
+
+commit 9f315970666cb392829cdbb1271d7a486f5af9c1
+Author: prafullakumarsahu <prafullakumarsahu@gmail.com>
+Date:   Thu Apr 7 16:54:16 2016 +0530
+
+    commit3
+
+commit 4baf4afcb37784eba2a7bb1969cee3cac79336ae
+Author: prafullakumarsahu <prafullakumarsahu@gmail.com>
+Date:   Thu Apr 7 16:31:48 2016 +0530
+
+    commit3
+Server Warrior (master) reflections $ git pull origin
+Warning: Permanently added the RSA host key for IP address '192.30.252.129' to t                                                                                                                he list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Server Warrior (master) reflections $ git pull origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Server Warrior (master) reflections $ git status
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   lesson_1_reflections.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Server Warrior (master *) reflections $ git add lesson_1_reflections.txt
+Server Warrior (master +) reflections $ git status
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   lesson_1_reflections.txt
+
+Server Warrior (master +) reflections $ git commit
+'C:/Program\ Files/Notepad++/Notepad++.exe' -n -w: C:/Program\ Files/Notepad++/N                                                                                                                otepad++.exe: No such file or directory
+error: There was a problem with the editor ''C:/Program\ Files/Notepad++/Notepad                                                                                                                ++.exe' -n -w'.
+Please supply the message using either -m or -F option.
+Server Warrior (master +) reflections $ git pull origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Server Warrior (master +) reflections $ git version
+git version 2.7.2.windows.1
+Server Warrior (master +) reflections $ git status
+On branch master
+Your branch is behind 'origin/master' by 1 commit, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   lesson_1_reflections.txt
+
+Server Warrior (master +) reflections $ git add lesson_1_reflections.txt
+Server Warrior (master +) reflections $ git commit -m "some commit"
+[master 0d56c00] some commit
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Server Warrior (master) reflections $ git push
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Server Warrior (master) reflections $ ssh-keygen -t rsa -b 4096 -C "prafullakuma                                                                                                                rsahu001@gmail.com"
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/Server Warrior/.ssh/id_rsa):                                                                                                                      Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/Server Warrior/.ssh/id_rsa.
+Your public key has been saved in /c/Users/Server Warrior/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:BVruhosiI8kYG8rvazzHOXK9F+0LkkFRjTJ7uOyawNA prafullakumarsahu001@gmail.co                                                                                                                m
+The key's randomart image is:
++---[RSA 4096]----+
+|       .+.o      |
+|       *.o .     |
+|      ..* .      |
+|  .   .= o       |
+|o. E  o.S .      |
+|==o  . =o. .     |
+|Ooooo =o .o      |
+|.o.*.*.o....     |
+|  o+*oo.o  ..    |
++----[SHA256]-----+
+Server Warrior (master) reflections $ git remote
+origin
+Server Warrior (master) reflections $ git remote -v
+origin  git@github.com:PrafullaKumarSahu/reflections.git (fetch)
+origin  git@github.com:PrafullaKumarSahu/reflections.git (push)
+Server Warrior (master) reflections $ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   lesson_1_reflections.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Server Warrior (master *) reflections $ git add lesson_1_reflections.txt
+Server Warrior (master +) reflections $ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   lesson_1_reflections.txt
+
+Server Warrior (master +) reflections $ git commit
+'C:/Program\ Files/Notepad++/Notepad++.exe' -n -w: C:/Program\ Files/Notepad++/N                                                                                                                otepad++.exe: No such file or directory
+error: There was a problem with the editor ''C:/Program\ Files/Notepad++/Notepad                                                                                                                ++.exe' -n -w'.
+Please supply the message using either -m or -F option.
+Server Warrior (master +) reflections $ git commit -m "aaa"
+[master ed60da1] aaa
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+Server Warrior (master) reflections $ git push origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+Server Warrior (master) reflections $ ssh -T git@github.com
+Permission denied (publickey).
+Server Warrior (master) reflections $ git push origin master
+To git@github.com:PrafullaKumarSahu/reflections.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'git@github.com:PrafullaKumarSahu/reflections.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+Server Warrior (master) reflections $ git pull
+'C:/Program\ Files/Notepad++/Notepad++.exe' -n -w: C:/Program\ Files/Notepad++/Notepad++.exe: No such file or directory
+error: There was a problem with the editor ''C:/Program\ Files/Notepad++/Notepad++.exe' -n -w'.
+Not committing merge; use 'git commit' to complete the merge.
+Server Warrior (master +|MERGING) reflections $ git pull origin master
+error: You have not concluded your merge (MERGE_HEAD exists).
+hint: Please, commit your changes before merging.
+fatal: Exiting because of unfinished merge.
+Server Warrior (master +|MERGING) reflections $ ^C
+Server Warrior (master +|MERGING) reflections $ git sattus
+git: 'sattus' is not a git command. See 'git --help'.
+
+Did you mean this?
+        status
+Server Warrior (master +|MERGING) reflections $ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 1 different commit each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+        new file:   lesson_4_reflections.txt
+
+Server Warrior (master +|MERGING) reflections $ git commit -m "ss"
+[master 4d94a43] ss
+Server Warrior (master) reflections $ git pull origin master
+From github.com:PrafullaKumarSahu/reflections
+ * branch            master     -> FETCH_HEAD
+Already up-to-date.
+Server Warrior (master) reflections $ git push origin master
+Counting objects: 8, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (8/8), 692 bytes | 0 bytes/s, done.
+Total 8 (delta 5), reused 0 (delta 0)
+To git@github.com:PrafullaKumarSahu/reflections.git
+   85f6517..4d94a43  master -> master
+Server Warrior (master) reflections $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   lesson_1_reflections.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Server Warrior (master *) reflections $ git add lesson_1_reflections.txt
+Server Warrior (master +) reflections $ git commit -m "gkj"
+[master 0c2e4e1] gkj
+ 1 file changed, 1 insertion(+)
+Server Warrior (master) reflections $ git push origin master
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 281 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+To git@github.com:PrafullaKumarSahu/reflections.git
+   4d94a43..0c2e4e1  master -> master
+Server Warrior (master) reflections $
