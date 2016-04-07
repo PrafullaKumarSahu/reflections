@@ -37,3 +37,4 @@ Restart Git Bash
 
 You'll need to close and re-open Git Bash before all your changes take effect.
 */
+
