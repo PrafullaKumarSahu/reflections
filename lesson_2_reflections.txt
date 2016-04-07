@@ -1,0 +1,9 @@
+Moving files from one directory to another using git bash
+
+Server Warrior (master *) testGit $ MV C:/Users/Server\ Warrior/Downloads/udacity-git/git-completion.bash git-completion.bash
+Server Warrior (master *) testGit $ MV C:/Users/Server\ Warrior/Downloads/udacity-git/git-prompt.sh git-prompt.sh
+Server Warrior (master *) testGit $ MV C:/Users/Server\ Warrior/Downloads/udacity-git/bash_profile_course .bash_profile
+Server Warrior (master *) testGit $ ls -a
+./   .bash_profile  git-completion.bash  hello-world/
+../  .git/          git-prompt.sh        reflections/
+Server Warrior (master *) testGit $
