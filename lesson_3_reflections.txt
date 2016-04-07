@@ -1,1 +1,74 @@
-git remote test git@github.com:PrafullaKumarSahu/reflections.git
+Demostartion of mergeing two branches
+
+Server Warrior (master) reflections $ init
+bash: init: command not found
+Server Warrior (master) reflections $ git remote
+Server Warrior (master) reflections $ git branch
+* master
+Server Warrior (master) reflections $ git branch x
+Server Warrior (master) reflections $ git checkout x
+Switched to branch 'x'
+Server Warrior (x) reflections $ get branch
+bash: get: command not found
+Server Warrior (x) reflections $ git status
+On branch x
+nothing to commit, working directory clean
+Server Warrior (x) reflections $ git status
+On branch x
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   lesson_3_reflections.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Server Warrior (x *) reflections $ git add lesson_3_reflections.txt
+Server Warrior (x +) reflections $ git status
+On branch x
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   lesson_3_reflections.txt
+
+Server Warrior (x +) reflections $ git commit -m "commit3"
+[x 4baf4af] commit3
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Server Warrior (x) reflections $ git status
+On branch x
+nothing to commit, working directory clean
+Server Warrior (x) reflections $ git checkout master
+Switched to branch 'master'
+Server Warrior (master) reflections $ git status
+On branch master
+nothing to commit, working directory clean
+Server Warrior (master) reflections $ git merge master x
+Updating 2edb827..4baf4af
+Fast-forward
+ lesson_3_reflections.txt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Server Warrior (master) reflections $ git log
+commit 4baf4afcb37784eba2a7bb1969cee3cac79336ae
+Author: prafullakumarsahu <prafullakumarsahu@gmail.com>
+Date:   Thu Apr 7 16:31:48 2016 +0530
+
+    commit3
+
+commit 2edb827aaef87d5f2498737cd7115c382cf7d326
+Author: prafullakumarsahu <prafullakumarsahu001@gmail.com>
+Date:   Thu Apr 7 16:20:53 2016 +0530
+
+    commit 3
+
+commit b0380f74a0a14a7dbfd48d65e0812d5c0de5e526
+Author: prafullakumarsahu <prafullakumarsahu001@gmail.com>
+Date:   Thu Apr 7 16:00:08 2016 +0530
+
+    commit 2
+
+commit b87a6c0e507d84bc0bf9081059756649f991b7f9
+Author: prafullakumarsahu <prafullakumarsahu001@gmail.com>
+Date:   Thu Apr 7 15:52:26 2016 +0530
+
+    First Commit
+Server Warrior (master) reflections $ ^C
+Server Warrior (master) reflections $
