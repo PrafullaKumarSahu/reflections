@@ -16,7 +16,7 @@ Changing background color
 If you prefer the background color of Git Bash to be something other than black, you can change it in the "Defaults" menu under the "Colors" tab. If you like the background color as-is, you don't need to make any changes.
 
 Downloading necessary files
-
+ 
 Save this file in your home directory with the name git-completion.bash.
 Save this file in your home directory with the name git-prompt.sh.
 Download bash_profile_course from the Downloadables section.
